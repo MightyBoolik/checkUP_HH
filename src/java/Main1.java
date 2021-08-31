@@ -39,13 +39,20 @@
 }*/
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main1
+/*public class Main1
 {
 
     public static void main(String[] args) {
-        int[] nums = new int[100];
+        int n = 4, m = 6;
+        int cn1 = 199;
+        int cn2 = 453;
+        int cn3 = 220;
+        int cn4 = 601;
+        int[] nums = new int[453];
 
         for (int i = 0; i < nums.length; i++) {
             nums[i] = (int) ((Math.random() * 100) + 1);
@@ -71,4 +78,5 @@ public class Main1
             System.out.println("That number was not found.");
         }
     }}
+*/
 
