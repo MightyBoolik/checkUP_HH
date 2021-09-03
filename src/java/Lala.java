@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Lala {
     public static void main(String[] args) {
 
@@ -8,25 +9,25 @@ public class Lala {
         int M = scan.nextInt();
 
         int[] arrayN = new int[N];
-        int total = 0;
+        long total = 0;
 
         for (int i = 0; i < arrayN.length; i++) {
             arrayN[i] = scan.nextInt();
             total += arrayN[i];
         }
 
-        int up, down = 1, bonus = total / M;
+        long up, down = 1, bonus = total / M;
         up = bonus + 1;
 
         if (bonus == 0) {
             System.out.println(bonus);
         } else {
             while (down + 1 < up) {
-                int count1 = 0;
+                long dep = 0;
                 for (int i = 0; i < arrayN.length; i++) {
-                    count1 += (arrayN[i] / bonus);
+                    dep += (arrayN[i] / bonus);
                 }
-                if (count1 < M) {
+                if (dep < M) {
                     up = bonus;
                     bonus -= (up - down) / 2;
                 } else {
